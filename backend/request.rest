@@ -1,0 +1,99 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviço 2",
+    "description": "Alguma descrição 2",
+    "price": 1600,
+    "image": "https://images.unsplash.com/photo-1691441131483-7901e11ba084?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+}
+
+###
+
+GET http://localhost:3000/api/services
+
+###
+
+GET http://localhost:3000/api/services/64d7e2e4e49507ffa6dbe485
+
+###
+
+DELETE http://localhost:3000/api/services/64d7e2e4e49507ffa6dbe485
+
+###
+PUT http://localhost:3000/api/services/64d806d167eca2965a7e4e14
+Content-Type: application/json
+
+{
+    "name": "TESTE ATUALIZAÇÃO",
+    "description": "Alguma descrição 2",
+    "price": 2500,
+    "image": "https://images.unsplash.com/photo-1691441131483-7901e11ba084?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+}
+
+###
+
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Dhymas",
+    "description": "Uma festa de aniversário",
+    "budget": 3000,
+    "image": "https://images.unsplash.com/photo-1691441131483-7901e11ba084?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição 1",
+            "price": 3000,
+            "image": "https://images.unsplash.com/photo-1691441131483-7901e11ba084?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição 2",
+            "price": 1600,
+            "image": "https://images.unsplash.com/photo-1691441131483-7901e11ba084?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+        }
+    ]
+}
+
+###
+
+GET http://localhost:3000/api/parties
+
+###
+
+GET http://localhost:3000/api/parties/64dc3160e06d0190b4cb9d8b
+
+###
+
+DELETE http://localhost:3000/api/parties/64dc3160e06d0190b4cb9d8a
+
+###
+
+PUT http://localhost:3000/api/parties/64dc3270e06d0190b4cb9d8c
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Dhymas",
+    "description": "Uma festa de aniversário",
+    "budget": 10000,
+    "image": "https://images.unsplash.com/photo-1691441131483-7901e11ba084?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição 1",
+            "price": 3000,
+            "image": "https://images.unsplash.com/photo-1691441131483-7901e11ba084?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição 2",
+            "price": 1600,
+            "image": "https://images.unsplash.com/photo-1691441131483-7901e11ba084?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+        }
+    ]
+}
+
